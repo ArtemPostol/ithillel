@@ -8,7 +8,7 @@ public class InchesConverter {
         Scanner input = new Scanner(System.in);
         System.out.println("Введите значение для дюйма: ");
 
-        int inches = input.nextInt();
+        double inches = input.nextInt();
         double meters = inches * 0.0254;
 
         System.out.println(inches + " дюйма  - это " + meters + " метра.");
