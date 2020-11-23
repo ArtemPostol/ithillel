@@ -1,3 +1,5 @@
+package first_lesson;
+
 public class Hello {
     public static void main() { // в данном случае в методе mail пропущен аргумент String[] args;
         System.out.println("Doesn't execute");
@@ -7,9 +9,9 @@ public class Hello {
 /*
 1) Пропущен main - <identifier> expected - ожидается идентификатор
 2) Пропущен String - illegal start of type - недопустимое начало типа
-3) Пропущен Hello - <identifier> expected - идентификатор ожидается
+3) Пропущен first_lesson.Hello - <identifier> expected - идентификатор ожидается
 4) Пропущен  System.out (без точки) -illegal start of expression - неправильное начало выражения
-5) Пропущен System.out. (с точкой) - cannot find symbol symbol: method println(java.lang.String)location: class Hello -
+5) Пропущен System.out. (с точкой) - cannot find symbol symbol: method println(java.lang.String)location: class first_lesson.Hello -
 не удается найти символ символ: метод println
 6) Пропущен println (без точки) - <identifier> expected - идентификатор ожидается
 7) Пропущен println (c точки) -  cannot find symbol symbol:   method out(java.lang.String) location: class java.lang.System - не удается найти символ
