@@ -4,10 +4,7 @@ import java.util.Scanner;
 
 public class SolutionQuadraticEquations {
     public static void main(String[] args) {
-        double a, b, c;
-        double d;
-        double x1, x2;
-        double x;
+        double a, b, c, x, x1, x2, d;
         double exhibitor = 2;
         int DISCRIMINANT_CALCULATING_CONST = 4;
         int ROOT_CALCULATING_CONST = 2 ;
