@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class TimeConverter {
     public static void main(String[] args) {
         final int MINUTES_IN_DAY = 24 * 60;
-        final int MINUTES_IN_YEAR = 24 * 60 * 365;
+        final int MINUTES_IN_YEAR = MINUTES_IN_DAY * 365;
 
         System.out.print("Введите минуты: ");
         Scanner scan = new Scanner(System.in);
