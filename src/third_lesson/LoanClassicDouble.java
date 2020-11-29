@@ -14,7 +14,7 @@ public class LoanClassicDouble {
         for (int i = 0; i < 12; i++) {
             repayCalculationPeriod = ((creditSum - (i * repaymentLoanBody)) * annualInterestRate) / loanTerms;
             System.out.println(i + 1 + " расчётный период. Сумма, которая идёт на погашение процентов по кредиту = " + repayCalculationPeriod);
-            overpaymentAmount = overpaymentAmount + repayCalculationPeriod;
+            overpaymentAmount += repayCalculationPeriod;
         }
         System.out.println("Сумма переплаты за 12 месяцев " + overpaymentAmount);
     }
