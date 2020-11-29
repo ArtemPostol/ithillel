@@ -20,7 +20,7 @@ public class LoanClassicDecimal {
             BigDecimal balancePayable = creditSum.subtract(repaymentLoanBodyPerMonth);
             BigDecimal balancePayableWithPercents = balancePayable.multiply(annualInterestRate);
             BigDecimal repayCalculationPeriod = balancePayableWithPercents.divide(loanTerms, context).stripTrailingZeros();
-            System.out.println(i + 1 + " расчётный период. Сумма, которая идёт на погашение процентов по кредиту " + repayCalculationPeriod);
+            System.out.println(i + 1 + " расчётный период. Сумма, которая идёт на погашение процентов по кредиту = " + repayCalculationPeriod);
             overpaymentAmount = overpaymentAmount.add(repayCalculationPeriod, context);
         }
         System.out.println("Сумма переплаты за 12 месяцев " + overpaymentAmount);
