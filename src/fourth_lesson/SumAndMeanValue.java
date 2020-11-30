@@ -11,8 +11,14 @@ public class SumAndMeanValue {
         for (int i = 1; i < 6; ++i) {
             System.out.println("Введите цифру №:" + i);
             a = input.nextInt();
-            value += a;
+            char b = (char) (a + '0');
+            if (Character.isDigit(b)) {
+                value += a;
+            } else {
+                System.out.println("Данное значение не является цифрой");
+                return;
+            }
         }
-        System.out.println("Сумма введенных цифр = " + value + ", а среднее значение = " + value / digitCount);
+        System.out.println("Сумма введенных цифр = " + value + ", а среднее значение = " + (double) value / digitCount);
     }
 }
