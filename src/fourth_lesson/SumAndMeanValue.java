@@ -7,11 +7,13 @@ public class SumAndMeanValue {
         int a;
         int value = 0;
         int digitCount = 5;
+
         Scanner input = new Scanner(System.in);
         for (int i = 1; i < 6; ++i) {
             System.out.println("Введите цифру №:" + i);
             a = input.nextInt();
             char b = (char) (a + '0');
+
             if (Character.isDigit(b)) {
                 value += a;
             } else {
