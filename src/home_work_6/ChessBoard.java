@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ChessBoard {
 
     public static void main(String[] args) {
-        System.out.println("Введите размерз доски: ");
+        System.out.println("Введите размер доски: ");
         Scanner input = new Scanner(System.in);
         int size = input.nextInt();
 

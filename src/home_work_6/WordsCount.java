@@ -7,7 +7,7 @@ public class WordsCount {
         Scanner input = new Scanner(System.in);
         int counter = 0;
         System.out.println("Введите строку:");
-        String phrase = input.nextLine();
+        String phrase = input.nextLine().trim();
         if (phrase.length() != 0) {
             counter++;
             for (int i = 0; i < phrase.length(); i++) {
@@ -16,6 +16,6 @@ public class WordsCount {
                 }
             }
         }
-        System.out.println("Вы ввели " + counter + " слов");
+        System.out.println("Вы ввели " + counter + " слов(а)");
     }
 }
