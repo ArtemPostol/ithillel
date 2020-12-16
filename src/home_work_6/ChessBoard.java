@@ -15,15 +15,15 @@ public class ChessBoard {
 
     public static String chessBoardBuilder(int size) {
         StringBuilder stringBuilder = new StringBuilder();
-
         for (int i = 0; i < size; i++) {
-            if (i % 2 != 0) {
-                stringBuilder.append(" ");
-            }
             for (int j = 0; j < size; j++) {
-                stringBuilder.append("# ");
+                if ((i + j) % 2 == 0) {
+                    stringBuilder.append(' ');
+                } else {
+                    stringBuilder.append('#');
+                }
             }
-            stringBuilder.append("\n");
+            stringBuilder.append('\n');
         }
         return stringBuilder.toString();
     }
