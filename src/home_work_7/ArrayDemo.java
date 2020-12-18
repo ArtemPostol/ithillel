@@ -50,7 +50,7 @@ public class ArrayDemo {
     }
 
     public static int[] addNumberToArray(int[] array, int number){
-        int[] result = Arrays.copyOf(array, array.length + 1);
+        int[] result = Arrays.copyOf(array, array.length + 1); //не уверен, что правильно понял задание;
         result[array.length] = number;
         return result;
     }

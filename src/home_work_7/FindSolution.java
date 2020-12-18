@@ -16,7 +16,7 @@ public class FindSolution {
         else if (start > target)
             return null;
         else {
-            return find(target, start + 5, "(" + history + " + 5)");
+            return find(target, start + 5, "(" + history + " + 5)"); //тут должен быть вызов метода find(target, start * 3, "(" + history + " * 3)") но не получилось
         }
     }
 
