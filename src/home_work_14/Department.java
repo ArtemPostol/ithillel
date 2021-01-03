@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class Department {
     private String name;
+    private static Employee[] employees = new Employee[0];
 
     public Department(String name) {
         this.name = name;
@@ -12,8 +13,6 @@ public class Department {
     public String getName() {
         return name;
     }
-
-    private static Employee[] employees = new Employee[0];
 
     public void addEmployee(Employee newEmployee) {
         Employee[] tempArray = Arrays.copyOf(Department.employees, Department.employees.length + 1);
