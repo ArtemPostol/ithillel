@@ -4,9 +4,16 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Employee {
+    String firstName;
+    String secondName;
+    Date birthday;
+    String position;
+    Department department;
+
     public String getFullName() {
         return firstName + " " + secondName;
     }
+
     public String getFirstName() {
         return firstName;
     }
@@ -19,11 +26,8 @@ public class Employee {
         return position;
     }
 
-    String firstName;
-    String secondName;
-
     public String getBirthday() {
-        if (birthday == null){
+        if (birthday == null) {
             return "дата рождения не указана";
         }
         SimpleDateFormat pattern = new SimpleDateFormat("dd-MM-yyyy");
@@ -33,10 +37,6 @@ public class Employee {
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
-
-    Date birthday;
-    String position;
-    Department department;
 
     public Department getDepartment() {
         return department;
