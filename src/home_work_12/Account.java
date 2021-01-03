@@ -44,6 +44,10 @@ public class Account {
     }
 
     public void deposit(double depositValue) {
+        if (depositValue <0 ) {
+            System.out.println("Сумма депозита не может быть меньше 0");
+            return;
+        }
         this.balance += depositValue;
     }
 
