@@ -1,7 +1,8 @@
 package home_work_18;
 
 public class Troll extends Character{
+    private static final String name = "Троль";
     public Troll() {
-        weapon = new AxeBehavior();
+        super(new AxeBehavior(), name);
     }
 }

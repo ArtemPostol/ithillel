@@ -1,16 +1,27 @@
 package home_work_18;
 
 public abstract class Character {
-    WeaponBehavior weapon;
+    private WeaponBehavior weapon;
+    private String name;
 
-    public Character() {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setWeapon(WeaponBehavior weapon) {
         this.weapon = weapon;
     }
 
+    public Character(WeaponBehavior weapon, String name) {
+        this.weapon = weapon;
+        this.name = name;
+    }
+
     public void fight() {
-        weapon.useWeapon();
+        System.out.println(this.getName()+ " - " + weapon.useWeapon());
     }
 }
